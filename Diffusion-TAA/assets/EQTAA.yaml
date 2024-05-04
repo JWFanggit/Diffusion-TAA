@@ -1,0 +1,17 @@
+pretrained_model_path: './best_model/best_model1'
+output_dir: ""
+root_path: ''
+origin_h5_file: ".../min-origin"
+normal_h5_file: ".../min-normal"
+abnorm_h5_filr: ".../min-abnormal"
+pool: 'mean'
+learning_rate: 1e-4
+train_batch_size: 1
+max_train_steps: 9000
+checkpointing_steps: 2000
+validation_steps: 500000
+seed: 123
+mixed_precision: fp16
+use_8bit_adam: False
+gradient_checkpointing: True
+enable_xformers_memory_efficient_attention: True
